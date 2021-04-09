@@ -1,20 +1,12 @@
-# random-stock-picker
-Picks a random stock from the 3,000+ stocks on the NASDAQ.
+# orca-random-stock-picker
+Picks a random stock from the stocks available on [Orca.app](https://orca.app/rBNUAD)
 
-List of stocks is based on this list published [here](ftp://ftp.nasdaqtrader.com/symboldirectory/nasdaqlisted.txt).
+Let me know if you find a stock missing or other error in the data.
 
 ## [Live Website](https://raybb.github.io/random-stock-picker/)
 
 Website was built using bootstrap and vanilla JavaScript.
 
-## Updating stock list
 
-Running './grabStocks.sh' will grab a list of all the current stocks.
-
-## Todo
-
-* Add continuous testing to check that every PR has the latest stocks.
-* Make offline friendly (through Progressive web app)
-
-## Forks
-🇷🇺 [Russian fork](https://github.com/empenoso/MOEX-Random-Picker) with MOEX stocks
+## Based of
+[random-stock-picker](https://github.com/RayBB/random-stock-picker)
