@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
-  <body class="h-100">
-    <div class="container h-100 justify-content-center">
-      <div class="row h-100 card-deck text-left justify-content-center align-items-center">
-        <div class="col-lg-10 h-75" style="margin-bottom:40px; padding-bottom:40px">
+  <body>
+        <div class="container col-lg-8 card-deck text-left" id="wrap">
           <div class="card box-shadow">
             <div class="card-header text-center">
               <h4 class="my-0 font-weight-normal">Why pick random stocks?</h4>
@@ -41,20 +39,26 @@
             </div>
           </div>
         </div>
-        <span id="foot">
-          <small class="col-lg-12 text-center white">Made by
+        <div id="foot">
+          <small class="col-lg-12 text-center white justify-content-center align-items-center">Made by
             <a class="white font-italic" href="https://github.com/aflugge/orca-random-stock-picker">ajf</a>
           </small>
-        </span>
-      </div>
-    </div>
+        </div>
 
     <style>
     body {
       background-color: darkslategrey;
     }
+    #wrap {
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 40px auto -40px;
+  /* Pad bottom by footer height */
+  padding: 0 0 50px;
+ }
     #foot{
-      position: absolute; bottom: 0; height: 40px;
+	 height: 40px; 
+	 text-align: center;
     }
     .white{
       color: white!important;
