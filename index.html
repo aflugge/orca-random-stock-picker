@@ -46,7 +46,7 @@
         document.querySelector("#ticker").innerText = curStock['symbol'];
 	document.querySelector("#name").innerText = curStock['name'];
         document.querySelector("#yahoo").href = "https://finance.yahoo.com/quote/" + curStock['symbol'] + ".L";
-	document.querySelector("#wiki").href = "http://en.wikipedia.org/?search=" + curStock['name'];
+	document.querySelector("#wiki").href = "http://en.wikipedia.org/?search=" + encodeURIComponent(curStock['name']);
       }
     </script>
 
